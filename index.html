@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Generador de Hash</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Generador de Hash (MD5, SHA-1, SHA-256)</h1>
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/theme.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/base.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/components.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Generador de Hash (MD5, SHA-1, SHA-256)</h1>
+      <p>Un generador de hashes simple para convertir texto en hashes utilizando los algoritmos MD5, SHA-1 y SHA-256. Ideal para verificar integridad o generar identificadores únicos.</p>
+    </header>
+    <main>
+      <div class="container">
         <div class="input-section">
-            <input type="text" id="textInput" placeholder="Introduce un texto">
-            <select id="algorithmSelect">
-                <option value="SHA-256">SHA-256</option>
-                <option value="SHA-1">SHA-1</option>
-                <option value="MD5">MD5</option>
-            </select>
-            <button id="generateHashBtn">Generar Hash</button>
+          <input type="text" id="textInput" placeholder="Introduce un texto" />
+          <select id="algorithmSelect">
+            <option value="SHA-256">SHA-256</option>
+            <option value="SHA-1">SHA-1</option>
+            <option value="MD5">MD5</option>
+          </select>
+          <button id="generateHashBtn">Generar Hash</button>
         </div>
         <div class="output-section">
-            <label for="hashOutput">Hash generado:</label>
-            <textarea id="hashOutput" readonly></textarea>
+          <label for="hashOutput">Hash generado:</label>
+          <textarea id="hashOutput" readonly></textarea>
         </div>
-    </div>
+      </div>
+    </main>
+    <footer>
+      <p>© 2024 Mi Negocio. Todos los derechos reservados.</p>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
